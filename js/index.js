@@ -32,3 +32,7 @@ function colorToYellow() {
 function bgToRed() {
     this.style.backgroundColor = "red";
 }
+
+// Copyright
+document.querySelector('footer').addEventListener('click', bgToRed);
+
