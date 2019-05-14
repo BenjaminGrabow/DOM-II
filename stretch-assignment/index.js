@@ -11,17 +11,37 @@ blocks.addEventListener("click", function() {
     this.style.height = "100%";
 });
 blockRed.addEventListener("click", function() {
+    blockBlue.style.order = "0";
+    blockGreen.style.order = "0";
+    blockPink.style.order = "0";
+    blockGray.style.order = "0";
     this.style.order = "-1";
 });
 blockBlue.addEventListener("click", function() {
+    blockRed.style.order = "0";
+    blockGreen.style.order = "0";
+    blockPink.style.order = "0";
+    blockGray.style.order = "0";
     this.style.order = "-1";
 });
 blockGreen.addEventListener("click", function() {
+    blockRed.style.order = "0";
+    blockBlue.style.order = "0";
+    blockPink.style.order = "0";
+    blockGray.style.order = "0";
     this.style.order = "-1";
 });
 blockPink.addEventListener("click", function() {
+    blockRed.style.order = "0";
+    blockBlue.style.order = "0";
+    blockGreen.style.order = "0";
+    blockGray.style.order = "0"; 
     this.style.order = "-1";
 });
 blockGray.addEventListener("click", function() {
+    blockRed.style.order = "0";
+    blockBlue.style.order = "0";
+    blockGreen.style.order = "0";
+    blockPink.style.order = "0";
     this.style.order = "-1";
 });
