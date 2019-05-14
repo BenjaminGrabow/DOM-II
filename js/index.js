@@ -33,6 +33,22 @@ function bgToRed() {
     this.style.backgroundColor = "red";
 }
 
+// BUTTONS
+let button = document.getElementsByClassName("btn");
+
+button[0].addEventListener("click", function() {
+    this.style.backgroundColor = "green";
+    TweenMax.to(".destination", 3, {x:300, ease: Bounce.easeOut});
+});
+button[1].addEventListener("select", bgToBlack);
+button[2].addEventListener("wheel", bgToPink);
+
+function bgToBlack() {
+    this.style.backgroundColor = "black";
+}
+function bgToPink() {
+    this.style.backgroundColor = "pink";
+}
+
 // Copyright
 document.querySelector('footer').addEventListener('click', bgToRed);
-
