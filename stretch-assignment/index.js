@@ -5,6 +5,7 @@ let blockPink = document.querySelector(".block--pink");
 let blockGray = document.querySelector(".block--gray");
 let blocks = document.querySelector(".blocks");
 
+// block goes to the top if clicked
 blocks.addEventListener("click", function() {
     this.style.display = "flex";
     this.style.width = "100%";
@@ -44,4 +45,21 @@ blockGray.addEventListener("click", function() {
     blockGreen.style.order = "0";
     blockPink.style.order = "0";
     this.style.order = "-1";
+});
+
+// block goes to the right if mouse is clicked down
+blockRed.addEventListener("mousedown", function() {
+    TweenMax.to(".block--red", 3, {x:600, ease: Bounce.easeOut});
+});
+blockBlue.addEventListener("mousedown", function() {
+    TweenMax.to(".block--blue", 3, {x:600, ease: Bounce.easeOut});
+});
+blockGreen.addEventListener("mousedown", function() {
+    TweenMax.to(".block--green", 3, {x:600, ease: Bounce.easeOut});
+});
+blockPink.addEventListener("mousedown", function() {
+    TweenMax.to(".block--pink", 3, {x:600, ease: Bounce.easeOut});
+});
+blockGray.addEventListener("mousedown", function() {
+    TweenMax.to(".block--gray", 3, {x:600, ease: Bounce.easeOut});
 });
